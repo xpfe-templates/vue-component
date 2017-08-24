@@ -1,12 +1,14 @@
-# vue
-A vue project template
+# vue-component
+一个Vue组件模版
 
-## Installation
+## 安装
 
-> npm i -g xpfe-cli && xpfe init vue [project-name]
+> npm i -g xpfe-cli && xpfe init vue-component [project-name]
 
-## Usage
+## 使用
 
-- yarn install (install all deps)
-- npm run dev (runs at http://localhost:3000)
-- npm run build (build production version)
+- yarn install (安装依赖)
+- npm run build (构建umd文件和压缩版的umd文件)
+- npm run dev (本地dev，服务端口：http://localhost:4000)
+- npm run demo (构建demo页面)
+- npm run deploy (发布到github-pages)
