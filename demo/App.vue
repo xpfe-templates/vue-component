@@ -28,7 +28,56 @@ export default {
   margin: 0;
   padding: 0;
 }
-.app-comp {
-  margin: 200px;
+body {
+  color: #fff;
+  background-color: #2d3a4b;
+}
+.app {
+  h1 {
+    margin: 50px auto 0;
+    text-align: center;
+    font-size: 50px;
+  }
+  &-wrap {
+    width: 800px;
+    margin: 0 auto;
+    padding: 50px 200px;
+  }
+  &-item {
+    margin-bottom: 30px;
+    &__code {
+      margin-top: 30px;
+    }
+    &__eg1 {
+      margin-top: 30px;
+      margin-right: 30px;
+    }
+    &__btn {
+      display: inline-block;
+      box-sizing: border-box;
+      line-height: 1;
+      cursor: pointer;
+      text-align: center;
+      margin: 0;
+      padding: 7px 9px;
+      font-size: 12px;
+      border-radius: 4px;
+      color: #fff;
+      background-color: #20a0ff;
+      border: 1px solid #20a0ff;
+    }
+  }
+  table {
+    width: 800px;
+    margin-top: 20px;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+  }
+  table th, table td {
+    border-collapse: collapse;
+    padding: 3px;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+  }
 }
 </style>
