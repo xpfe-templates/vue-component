@@ -7,7 +7,17 @@
 */
 
 import VueComponent from './vue-component.vue'
-export default VueComponent
+
+const install = (Vue) => {
+  Vue.component('vue-component', VueComponent)
+}
+
+export default {
+  install,
+}
+export {
+  VueComponent,
+}
 if (typeof window !== 'undefined' && window.Vue) {
-  window.Vue.component('vue-component', VueComponent)
+  install(window.Vue)
 }
