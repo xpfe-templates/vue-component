@@ -16,7 +16,7 @@ export default {
   components: { VueComponent },
   data () {
     return {
-      githubLink: 'https://github.com/xpfe-templates/vue-component',
+      githubLink: 'https://github.com/excaliburhan/vue-mark',
       count: 34,
     }
   }
