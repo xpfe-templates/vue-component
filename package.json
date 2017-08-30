@@ -4,6 +4,7 @@
   "description": "A vue component project",
   "license": "MIT",
   "scripts": {
+    "prepare": "npm run build",
     "dev": "node build/dev-server.js",
     "lint": "eslint --ext .js,.vue src",
     "demo": "node build/build.js",
