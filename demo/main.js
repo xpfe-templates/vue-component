@@ -9,7 +9,10 @@
 import Vue from 'vue/dist/vue.min.js'
 import App from './App.vue'
 
+Vue.config.productionTip = false // 取消启动时的提示
+
 new Vue({
   el: '#app',
-  render: h => h(App)
+  template: '<App/>',
+  components: { App },
 })
