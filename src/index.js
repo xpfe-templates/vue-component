@@ -6,17 +6,17 @@
  * @desc [入口文件]
 */
 
-import VueComponent from './vue-component.vue'
+import vueDot from './vue-dot.vue'
 
 const install = (Vue) => {
-  Vue.component('vue-component', VueComponent)
+  Vue.component('vue-dot', vueDot)
 }
 
 export default {
   install,
 }
 export {
-  VueComponent,
+  vueDot,
 }
 if (typeof window !== 'undefined' && window.Vue) {
   install(window.Vue)

@@ -8,18 +8,16 @@
 
 var path = require('path')
 var vueLoaderConfig = require('./vue-loader.conf')
+var appConfig = require('../appConfig')
 
 function resolve (dir) {
   return path.join(__dirname, '..', dir)
 }
 
-module.exports = {
-  entry: {
-    'vue-component': './src/index.js'
-  },
+var config = {
+  entry: {},
   output: {
     filename: './dist/[name].js',
-    library: 'VueComponent',
     libraryTarget: 'umd'
   },
   module: {
@@ -38,3 +36,8 @@ module.exports = {
     ]
   }
 }
+
+config.entry[appConfig.componentName] = './src/index.js'
+config.output.library = appConfig.componentName
+
+module.exports = config
