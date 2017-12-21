@@ -1,6 +1,6 @@
-var path = require('path')
-var ghpages = require('gh-pages')
-var chalk = require('chalk')
+const path = require('path')
+const ghpages = require('gh-pages')
+const chalk = require('chalk')
 
 ghpages.publish(path.join(__dirname, '../demo-dist'), err => {
   if (err) {

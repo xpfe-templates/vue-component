@@ -6,15 +6,18 @@
  * @desc [配置信息]
 */
 
-// const env = process.env.NODE_ENV
-const isProd = process.env.NODE_ENV === 'production'
+const env = process.env.NODE_ENV
 
-const componentName = 'vue-dot' // 组件名字以及打包压缩的前缀
-const baseURL = isProd ? 'http://api.example.com' : 'http://testapi.example.com'
-const htmlTitle = isProd ? 'Vue Dot' : 'Vue Dot - dev'
+let componentName = 'vue-comp'
+let gitDir = 'vue-comp'
+let htmlTitle = 'vue-comp - dev'
+
+if (env === 'production') { // 生产环境
+  htmlTitle = 'vue-comp'
+}
 
 module.exports = {
   componentName,
-  baseURL,
+  gitDir,
   htmlTitle,
 }

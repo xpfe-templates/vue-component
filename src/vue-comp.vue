@@ -1,10 +1,10 @@
 <template>
-<span class="vue-dot">{{ dotText }}</span>
+<span class="vue-comp">{{ dotText }}</span>
 </template>
 
 <script>
 export default {
-  name: 'vue-dot',
+  name: 'vue-comp',
   data () {
     return {
       timer: null,

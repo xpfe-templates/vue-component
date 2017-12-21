@@ -1,6 +1,7 @@
-var webpack = require('webpack')
-var merge = require('webpack-merge')
-var releaseConfig = require('./webpack.release.conf')
+'use strict'
+const webpack = require('webpack')
+const merge = require('webpack-merge')
+const releaseConfig = require('./webpack.release.conf')
 
 module.exports = merge(releaseConfig, {
   output: {

@@ -1,20 +1,13 @@
-/**
- * @author xiaoping
- * @email edwardhjp@gmail.com
- * @create date 2017-08-24 03:59:25
- * @modify date 2017-08-24 03:59:25
- * @desc [description]
-*/
-
-var path = require('path')
-var vueLoaderConfig = require('./vue-loader.conf')
-var appConfig = require('../appConfig')
+'use strict'
+const path = require('path')
+const vueLoaderConfig = require('./vue-loader.conf')
+const appConfig = require('../appConfig')
 
 function resolve (dir) {
   return path.join(__dirname, '..', dir)
 }
 
-var config = {
+const config = {
   entry: {},
   output: {
     filename: './dist/[name].js',

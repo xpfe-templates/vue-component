@@ -1,14 +1,14 @@
+'use strict'
 require('./check-versions')()
 
 process.env.NODE_ENV = 'releasing'
-
-var ora = require('ora')
-var rm = require('rimraf')
-var path = require('path')
-var chalk = require('chalk')
-var webpack = require('webpack')
-var releaseConfig = require('./webpack.release.conf')
-var releaseMinConfig = require('./webpack.release.min.conf')
+const ora = require('ora')
+const rm = require('rimraf')
+const path = require('path')
+const chalk = require('chalk')
+const webpack = require('webpack')
+const releaseConfig = require('./webpack.release.conf')
+const releaseMinConfig = require('./webpack.release.min.conf')
 
 function buildUmd (config, version, cb) {
   var spinner = ora('building for ' + version + '...')
@@ -35,4 +35,3 @@ rm(path.join(__dirname, './dist'), err => {
     buildUmd(releaseMinConfig, 'Releasing minified')
   })
 })
-
