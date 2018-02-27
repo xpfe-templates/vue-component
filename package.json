@@ -1,7 +1,7 @@
 {
-  "name": "vue-component",
+  "name": "{{projectName}}",
   "version": "1.0.0",
-  "description": "A vue component project",
+  "description": "A vue component project named {{projectName}}",
   "license": "MIT",
   "scripts": {
     "prepare": "npm run build",
